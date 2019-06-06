@@ -10,7 +10,7 @@ require('babel-polyfill')
 
 // load manifests
 // scripts
-require('./assets/scripts/app.js')
+require('./assets/scripts/app.java')
 
 // styles
 require('./assets/styles/index.scss')
@@ -24,7 +24,7 @@ Public class Calculator {
 
     public double addIt(double amountToAdd){
         total = amountToAdd + total;
-        return total
+        return total;
         System.out.println("The Sum of these numbers is: " + total);
     }
 
@@ -38,5 +38,17 @@ Public class Calculator {
         total = total * amountToMultiply;
         return total;
         System.out.println("These numbers multiplied totals: " + total);
+    }
+
+    public double divideIt(double amountToDivide){
+        total = total / amountToDivide;
+        return total;
+        System.out.println("These numbers divided equals: " + total);
+    }
+
+    public void clearIt(){
+        total = 0;
+        return total;
+        System.out.println("You have cleared your calculator.");
     }
 }
