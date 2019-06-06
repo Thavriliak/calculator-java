@@ -51,4 +51,8 @@ Public class Calculator {
         return total;
         System.out.println("You have cleared your calculator.");
     }
+
+    public static void main(String[] args){
+        
+    }
 }
